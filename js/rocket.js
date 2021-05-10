@@ -30,6 +30,6 @@ var changeState = function(state){
 				{
 					changeState(5);
 				};
-		}, 2000)
+		}, 1600)
 	};
 }

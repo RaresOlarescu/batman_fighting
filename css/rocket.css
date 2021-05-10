@@ -1,23 +1,23 @@
-.left{
+.top{
 	position: fixed;
-	background-color: aquamarine;
-	width: 50%;
-	height: 100%;
+	background-color: black;
+	width: 100%;
+	height: 50%;
 	top: 0;
 	left: 0;
 }
 
-.right{
+.bottom: {
 	position: fixed;
 	background-color: aliceblue;
-	width: 50%;
-	height: 100%;
+	width: 100%;
+	height: 50%;
 	top: 0;
 	right: 0;
 }
 
 .ground{
-	background-color: green;
+	background-color: black;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -25,23 +25,48 @@
 	height: 20px;
 }
 
-.rocket{
+.batman{
 	position: absolute;
-	left: 50%;
-	bottom: 20px;
-	width: 20px;
-	height:100px;
-	background-color: blue;
-	transition:bottom 10000ms;
+	left: 0%;
+	bottom: 20%;
+	width: 180px;
+	height:150px;
+	background: url('../img/batman_standing.png') no-repeat 0 0;
+	transition:left 1500ms;
 }
 
-body.body-state1 .rocket{
+.inamici{
+	background: url('../img/inamic.png') no-repeat 0 0;
+	right: 0%;
+	bottom: 20%;
+	width: 180px;
+	height:150px;
+
+}
+
+
+body.body-state3 .batman{
+	background: url('../img/batman_running.gif') no-repeat 0 0;
+}
+
+body.body-state4 .batman{
+	background: url('../img/batman_wining.gif') no-repeat 0 0;
+}
+
+body.body-state5 .batman{
+	background: url('../img/batman_loosing.gif') no-repeat 0 0;
+}
+
+
+body.body-state1 .batman{
 	transition: none;
 }
 
-body.body-state3 .rocket,
-body.body-state4 .rocket{
-	bottom: 1000px;
+/*batman imagini*/
+
+body.body-state3 .batman,
+body.body-state4 .batman{
+	left: 85%;
 
 }
 
@@ -53,7 +78,9 @@ body.body-state4 .rocket{
 	display: none;
 }
 
-
+h1{
+	color: white;
+}
 
 body.body-state1 .state1{ display: block;}
 body.body-state2 .state2{ display: block;}
@@ -62,9 +89,16 @@ body.body-state4 .state4{ display: block;}
 body.body-state5 .state5{ display: block;}
 
 a{
+	color: white;
 
 }
 
 a.button{
-
+	display: inline-block;
+	background-color: white;
+	color: black;
+	padding: 20px 40px;
+	text-decoration: none;
+	border-radius: 10px;
+	text-transform: uppercase;
 }
