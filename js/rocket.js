@@ -19,17 +19,21 @@ var changeState = function(state){
 		}, 100);
 		
 	}else if(state == 3){
+		var test = setTimeout(function(){
+			changeState(6);
+		},1500)
+
 		var succces = setTimeout(function(){
-				var randomNumer = Math.round(Math.random()*10)
-				console.log('randomNumer:', randomNumer)
-				if(randomNumer > 5)
-				{
-					changeState(4);
-				}
-				else
-				{
-					changeState(5);
-				};
-		}, 1600)
+			var randomNumer = Math.round(Math.random()*10)
+			console.log('randomNumer:', randomNumer)
+			if(randomNumer > 5)
+			{
+				changeState(4);
+			}
+			else
+			{
+				changeState(5);
+			};
+		}, 3000)
 	};
 }

@@ -36,9 +36,11 @@
 }
 
 .inamici{
-	background: url('../img/inamic.png') no-repeat 0 0;
-	right: 0%;
-	bottom: 20%;
+	position: absolute;
+	background-image: url('../img/inamic.jpg');
+	background-repeat: no-repeat;
+	left: 95%;
+	bottom: 18%;
 	width: 180px;
 	height:150px;
 
@@ -51,12 +53,22 @@ body.body-state3 .batman{
 
 body.body-state4 .batman{
 	background: url('../img/batman_wining.gif') no-repeat 0 0;
+	transition: none;
+
+}
+
+body.body-state4 .inamici{
+	visibility: hidden;
+
 }
 
 body.body-state5 .batman{
 	background: url('../img/batman_loosing.gif') no-repeat 0 0;
 }
 
+body.body-state6 .batman{
+	background: url('../img/batman_fighting.gif') no-repeat 0 0;
+}
 
 body.body-state1 .batman{
 	transition: none;
@@ -66,8 +78,12 @@ body.body-state1 .batman{
 
 body.body-state3 .batman,
 body.body-state4 .batman{
-	left: 85%;
+	left: 84%;
 
+}
+body.body-state6 .batman{
+	transition: none;
+	left: 88%;
 }
 
 .state1,
