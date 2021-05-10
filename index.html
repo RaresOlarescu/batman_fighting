@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Js rocket</title>
-	<script type="text/javascript" src="js/script.js">
-	</script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Batman la atac</title>
+	<link rel="stylesheet" type="text/css" href="css/rocket.css">
+	<script type="text/javascript" src="js/rocket.js"></script>
 </head>
-<body>
-	<h1>am creat</h1>
-	<a href="#" onclick="doCoolStuff();">Click me</a>
-
-
-	<div class="cool" id="cool">
-		<p>Buna! Sunt Tare!</p>
+<body class="body-state1">
+	<div class="top">
+		<div class="state1">
+			<h1>Batman, la atac!</h1>
+			<a href="#" class="button" onclick="changeState(2);">Atacam</a>
+		</div>
+		<div class="state2">
+			<h1 id="countdown">10</h1>
+			<a href="#" class="button" onclick="changeState(1);">Anuleaza</a>
+		</div>
+		<div class="state3">
+			<h1>Atacam!</h1>
+		</div>
+		<div class="state4">
+			<h1>Am castigat!</h1>
+			<a href="#" class="button" onclick="changeState(1);">Hai la curve!</a>
+		</div>
+		<div class="state5">
+			<h1>Ce sa-ti fac daca ai fost tare in gura?</h1>
+			<a href="#" class="button" onclick="changeState(1);">Mai incercam!</a>
+		</div>
 	</div>
+
+	<div class="bottom">
+		<div class="ground"></div>
+		<div class="batman"></div>
+		<div class="inamici"></div>
+	</div>
+
 </body>
 </html>
-
-
-
-
-
